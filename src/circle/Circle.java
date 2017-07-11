@@ -5,14 +5,12 @@ package circle;
 public class Circle {
     private double radius;
     private String color;
+    private double sectordegree;
     
     public double getRadius(){
         return radius;
     }
     
-    public String getColor(){
-        return color;
-    }
     
     public void setRadius(double rad){
         if(rad<=0)
@@ -24,6 +22,30 @@ public class Circle {
         {
             radius = rad;
         }
+    }
+    
+    public void setSectorDegree(double deg)
+    {
+        if(deg<=0)
+        {
+            System.out.println("sector degree cannot be lower than 0");
+            System.exit(0);
+        }
+        else
+        {
+            sectordegree = deg;
+        }
+    }
+    
+        public double getSectorDegree()
+    {
+        return sectordegree;
+    
+    }
+    
+    public String getColor()
+    {
+        return color;
     }
     
     public String setColor()
@@ -51,4 +73,13 @@ public class Circle {
         return Math.PI * (radius * radius);
     }
     
+    public double getSectorarea()
+    {
+        return (radius * radius * Math.PI) / (360 / sectordegree);
+    }
+    
+    public double getArc()
+    {
+        return (2.0 * Math.PI * radius) / (360 / sectordegree);
+    }
 }
