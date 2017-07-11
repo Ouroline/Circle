@@ -1,4 +1,7 @@
 package circle;
+
+
+
 public class Circle {
     private double radius;
     private String color;
@@ -15,6 +18,7 @@ public class Circle {
         if(rad<=0)
         {
             System.out.println("radius cannot be lower than 0");
+            System.exit(0);
         }
         else
         {

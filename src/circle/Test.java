@@ -11,8 +11,7 @@ public class Test {
     Scanner sc = new Scanner(System.in);
     Circle c1 = new Circle();
     
-   double rad = sc.nextDouble();
-    
+    double rad = sc.nextDouble();
     c1.setRadius(rad);
     
     System.out.println("The Radius is: " + c1.getRadius());
