@@ -1,13 +1,28 @@
 package circle;
 public class Circle {
     private double radius;
-    private char color;
+    private String color;
     
     public double getRadius(){
         return radius;
     }
     
-    public char getColor(){
+    public String getColor(){
+        return color;
+    }
+    
+    public void setRadius(double rad){
+        if(rad<=0)
+        {
+            System.out.println("radius cannot be lower than 0");
+        }
+        else
+        {
+            radius = rad;
+        }
+    }
+    
+    public String setColor(){
         return color;
     }
     
@@ -15,14 +30,13 @@ public class Circle {
         return radius * radius * Math.PI;
     }
     
-    public double setRadius(){
-        return radius;
-    }
+    public double getCircumference() {
+      return 2.0 * radius * Math.PI;
+   }
     
-    public char setColor(){
-        return color;
-    }
-    
-    
-    
+    @Override
+    public String toString() {
+      return "Circle[radius=" + radius + ", color=" + color + "]";
+   }
+ 
 }
