@@ -16,6 +16,8 @@ public class Test {
     System.out.println("The Radius is: " + c1.getRadius());
     System.out.println("The Color is: " + c1.getColor());
     System.out.println("The Area is: " + c1.getArea());
-    System.out.println("The circumference is: " + c1.getCircumference());
+    System.out.println("The Circumference is: " + c1.getCircumference());
+    System.out.println("The Diameter is: " + c1.getDiameter());
+    System.out.println("The Segment is: " + c1.getSegment());
     }
 }

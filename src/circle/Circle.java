@@ -22,21 +22,29 @@ public class Circle {
         }
     }
     
-    public String setColor(){
+    public String setColor()
+    {
         return color;
     }
     
-    public double getArea(){
+    public double getArea()
+    {
         return radius * radius * Math.PI;
     }
     
-    public double getCircumference() {
-      return 2.0 * radius * Math.PI;
-   }
+    public double getCircumference()
+    {
+        return 2.0 * Math.PI * radius;
+    }
     
-    @Override
-    public String toString() {
-      return "Circle[radius=" + radius + ", color=" + color + "]";
-   }
- 
+    public double getDiameter()
+    {
+        return (2.0 * Math.PI * radius) / Math.PI;
+    }
+    
+    public double getSegment()
+    {
+        return Math.PI * (radius * radius);
+    }
+    
 }
