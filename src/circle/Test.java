@@ -6,6 +6,8 @@ public class Test {
     public static void main(String[] args)
     {
     double area;
+    System.out.println("Welcome!!!");
+    System.out.println("Please Enter The Radius Of The Circle");
     Scanner sc = new Scanner(System.in);
     Circle c1 = new Circle();
     
